@@ -10,7 +10,7 @@ from flask_swagger_ui import get_swaggerui_blueprint
 
 config = {
     'JSON_SORT_KEYS': False,
-    'JWT_SECRET_KEY': '&F)J@NcRfUjXn2r5u7x!A%D*G-KaPdSg',
+    'JWT_SECRET_KEY': 'BaNPFol%Dgfgge',
     'JWT_ACCESS_TOKEN_EXPIRES': 300,
     'JWT_REFRESH_TOKEN_EXPIRES': 604800
 }
