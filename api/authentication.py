@@ -25,8 +25,8 @@ class TokenApi(Resource):
             response.status_code = 400
             return response
         
-        with open('User.json','r') as food:
-            data = food.read()
+        with open('User.json','r') as user:
+            data = user.read()
 
         obj = json.loads(data)
         if obj['username'] == body.get('username') and obj['password'] == body.get('password'):

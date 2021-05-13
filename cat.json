@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Gray Wolf",
+        "ScienceName": "Canis lupus",
+        "Diet": "Carnivore",
+        "AnimalType": "Mammals",
+        "Habitat": "Woodlands,Forest,Grasslands,Deserts",
+        "GroupName": "Pack"
+    },
+    {
+        "Name": "Bengal Tiger",
+        "ScienceName": "Panthera tigris tigris",
+        "Diet": "Carnivore",
+        "AnimalType": "Mammals",
+        "Habitat": "Rain forests,Grasslands,Savannas",
+        "GroupName": "A pack"
+    },
+    {
+        "Name": "Flying squirrels",
+        "ScienceName": "Pteromyini",
+        "Diet": "Omnivore",
+        "AnimalType": "Mammals",
+        "Habitat": "Forest",
+        "GroupName": "Pack"
+    }
+]
