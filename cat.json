@@ -1,26 +1,42 @@
 [
     {
-        "Name": "Gray Wolf",
-        "ScienceName": "Canis lupus",
-        "Diet": "Carnivore",
-        "AnimalType": "Mammals",
-        "Habitat": "Woodlands,Forest,Grasslands,Deserts",
-        "GroupName": "Pack"
+        "Name": "Abyssinian Cat",
+        "LifeSpanMin": 9,
+        "LifeSpanMax": 15,
+        "Color": "Ruddy,Red,Blue,Fawn",
+        "Coat": "Medium",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Small,Medium"
     },
     {
-        "Name": "Bengal Tiger",
-        "ScienceName": "Panthera tigris tigris",
-        "Diet": "Carnivore",
-        "AnimalType": "Mammals",
-        "Habitat": "Rain forests,Grasslands,Savannas",
-        "GroupName": "A pack"
+        "Name": "American Bobtail Cat Breed",
+        "LifeSpanMin": 13,
+        "LifeSpanMax": 15,
+        "Color": "White,Black,Blue,Red,Cream,Chocolate,Lavender,Cinnamon,Fawn",
+        "Coat": "Short,Medium,Long",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Small,Medium"
     },
     {
-        "Name": "Flying squirrels",
-        "ScienceName": "Pteromyini",
-        "Diet": "Omnivore",
-        "AnimalType": "Mammals",
-        "Habitat": "Forest",
-        "GroupName": "Pack"
+        "Name": "Turkish Angora Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 18,
+        "Color": "White,Black,Blue,Cream",
+        "Coat": "Semi-long",
+        "Energy": "High",
+        "Shedding": "Heavy",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Chartreux Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 18,
+        "Color": "Ash",
+        "Coat": "Medium",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
     }
 ]
