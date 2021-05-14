@@ -197,25 +197,21 @@ paths:
         description: weight
         schema:
           type: number
-          required: true
       - name: height
         in: query
         description: height
         schema:
           type: number
-          required: true
       - name: age
         in: query
         description: age
         schema:
           type: integer
-          required: true
       - name: gender
         in: query
         description: gender
         schema:
           type: string
-          required: true
           enum: [m,g]
       responses:
         '200':

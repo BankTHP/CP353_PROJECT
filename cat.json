@@ -7,7 +7,7 @@
         "Coat": "Medium",
         "Energy": "High",
         "Shedding": "Minimal",
-        "Size": "Small,Medium"
+        "Size": "Small"
     },
     {
         "Name": "American Bobtail Cat Breed",
@@ -17,7 +17,7 @@
         "Coat": "Short,Medium,Long",
         "Energy": "High",
         "Shedding": "Minimal",
-        "Size": "Small,Medium"
+        "Size": "Small"
     },
     {
         "Name": "Turkish Angora Cat Breed",
@@ -36,6 +36,36 @@
         "Color": "Ash",
         "Coat": "Medium",
         "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Bengal Cat",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 16,
+        "Color": "Bright orange",
+        "Coat": "Medium",
+        "Energy": "Low",
+        "Shedding": "Low",
+        "Size": "Large"
+    },
+    {
+        "Name": "Birman Cat Breed",
+        "LifeSpanMin": 15,
+        "LifeSpanMax": "15+",
+        "Color": "Seal point, blue point, chocolate point, lilac point",
+        "Coat": "High",
+        "Energy": "Low",
+        "Shedding": "Heavy",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Selkirk Rex Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 18,
+        "Color": "White, black, red, cream, chocolate and lavender",
+        "Coat": "Medium",
+        "Energy": "Low",
         "Shedding": "Minimal",
         "Size": "Medium"
     }

@@ -245,5 +245,3 @@ def deleteJson(catname):
             json.dump(cats_list, open_json_file, indent=4)
             return 200
     return 500
-
-is_all_none = lambda L: not len(filter(lambda e: not e is None, L))

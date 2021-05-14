@@ -1,0 +1,112 @@
+{% extends 'base_layout.html' %}
+{% block body %}
+<div class="col-md-12">
+  <div class="touch">
+    <div class="card text-left">
+      <div class="card-body">
+        <h5 class="text-center"> CAT </h5>
+
+        <div class="form-check">
+          <span>Energy : </span>
+          <label><input class="cardCheckBox" type="checkbox" value="Low"> Low</label>
+          <label><input class="cardCheckBox" type="checkbox" value="High"> High</label>
+        </div>
+        <div class="form-check">
+          <span>Size : </span>
+          <label><input class="cardCheckSize" type="checkbox" value="Small"> Small</label>
+          <label><input class="cardCheckSize" type="checkbox" value="Medium"> Medium</label>
+          <label><input class="cardCheckSize" type="checkbox" value="Large"> Large</label>
+        </div>
+        <div class="form-check">
+          <span>Shedding : </span>
+          <label><input class="cardCheckShedding" type="checkbox" value="Minimal"> Minimal</label>
+          <label><input class="cardCheckShedding" type="checkbox" value="Heavy"> Heavy</label>
+        </div>
+        <div class="form-check">
+          <span>Coat : </span>
+          <label><input class="cardCheckCoat" type="checkbox" value="Low"> Low</label>
+          <label><input class="cardCheckCoat" type="checkbox" value="Medium"> Medium</label>
+          <label><input class="cardCheckCoat" type="checkbox" value="High"> High</label>
+        </div>
+
+        <div class="touch">
+          <div class="card text-left">
+            <div class="card-body">
+              <div class="cards-list mt-2">
+                {% for i in data %}
+                <div class="card" data-coat="{{i.Coat}}" data-shedding="{{i.Shedding}}" data-size="{{i.Size}}" data-energy="{{i.Energy}}">
+                  <div class="card-body">
+                    <h2 class="card-title">{{i.Name}}</h2>
+                    <p class="card-text">พลังงานของแมว : {{i.Energy}}</p>
+                    <p class="card-text">ชีวิตของแมว : {{i.LifeSpanMin}} - {{i.LifeSpanMax}} ปี</p>
+                    <p class="card-text">สีของแมว : {{i.Color}}</p>
+                    <p class="card-text">ความยาวของขน : {{i.Coat}}</p>
+                    <p class="card-text">จำนวนขนที่ร่วง : {{i.Shedding}}</p>
+                    <p class="card-text">ขนาดตัวแมว : {{i.Size}}</p>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+  const $cards = $("[data-energy]");
+  const $cardsCkb = $(".cardCheckBox");
+
+  const $cardsize = $("[data-size]")
+  const $cardsCKDsize = $(".cardCheckSize")
+
+  const $cardsshedding = $("[data-shedding]");
+  const $cardCKDshedding = $(".cardCheckShedding")
+
+  const $cardscoat = $("[data-coat]");
+  const $cardCKDcoat = $(".cardCheckCoat")
+  
+  $cardCKDcoat.on("change", function () {
+    const checkedArrcoat = $cardCKDcoat.filter(":checked").get().map(el => el.value);
+    if (!checkedArrcoat.length) return $cardscoat.removeClass("is-hidden");
+    $cardscoat.each(function () {
+      const coat = $(this).data("coat");
+      $(this).toggleClass("is-hidden", !checkedArrcoat.includes(coat));
+    });
+
+  });
+
+  $cardsCkb.on("change", function () {
+    const checkedArr = $cardsCkb.filter(":checked").get().map(el => el.value);
+    if (!checkedArr.length) return $cards.removeClass("is-hidden");
+    $cards.each(function () {
+      const energy = $(this).data("energy");
+      $(this).toggleClass("is-hidden", !checkedArr.includes(energy));
+    });
+
+  });
+
+
+  $cardsCKDsize.on("change", function () {
+    const checkedSize = $cardsCKDsize.filter(":checked").get().map(el => el.value);
+    if (!checkedSize.length) return $cardsize.removeClass("is-hidden")
+    $cardsize.each(function () {
+      const size = $(this).data("size");
+      $(this).toggleClass("is-hidden", !checkedSize.includes(size));
+    });
+  });
+
+  $cardCKDshedding.on("change", function () {
+    const checkedArrshedding = $cardCKDshedding.filter(":checked").get().map(el => el.value);
+    if (!checkedArrshedding.length) return $cardsshedding.removeClass("is-hidden");
+    $cardsshedding.each(function () {
+      const shedding = $(this).data("shedding");
+      $(this).toggleClass("is-hidden", !checkedArrshedding.includes(shedding));
+    });
+
+  });
+</script>
+
+{% endblock %}
