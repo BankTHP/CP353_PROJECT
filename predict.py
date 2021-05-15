@@ -15,16 +15,16 @@ model.load()
 @predictml.route('/catscan', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
-        if 'file1' not in request.files:
-            return 'there is no file1 in form!'
-        file1 = request.files['file1']
-        path = os.path.join(predictml.config['UPLOAD_FOLDER'], file1.filename)
-        file1.save(path)
+        if 'file' not in request.files:
+            return 'there is no file in form!'
+        file = request.files['file']
+        path = os.path.join(predictml.config['UPLOAD_FOLDER'], file.filename)
+        file.save(path)
 
-        image_1 = Image.open(path)
-        outputs = model.predict(image_1)
-
-        return render_template('prediction.html', pred_result=outputs)
+        imagecat = Image.open(path)
+        outputs = model.predict(imagecat)
+        imagename = imagecat.filename
+        return render_template('prediction.html', pred_result=outputs,pic = imagename)
 
     return render_template('upload.html')
 

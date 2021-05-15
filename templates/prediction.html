@@ -6,8 +6,13 @@
         <div class="card text-left">
             <div class="card-body">
                 <h1>Prediction</h1>
+                <img src="{{pic}}" align="middle"width="1000" height="800" />
+                <br>
+                <br>
                 <p>มันคือแมวพันธุ์ : {{ pred_result['predictions'][0]['label'] }}</p>
                 <p>ความน่าจะเป็น : {{ pred_result['predictions'][0]['confidence'] }}</p>
+                <a href="/" class="btn btn-dark btn-sm">Home</a>
+                <a href="/catscan" class="btn btn-dark btn-sm">predict อีกครั้ง</a>
             </div>
         </div>
     </div>

@@ -12,7 +12,6 @@ import json
 from models.oauth.error import OAuthErrorResponse
 from models.oauth.token import TokenResponse
 
-
 class TokenApi(Resource):
     def post(self)->Response:
         body = request.form.to_dict()
