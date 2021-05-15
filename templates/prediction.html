@@ -9,8 +9,18 @@
                 <img src="{{pic}}" align="middle"width="1000" height="800" />
                 <br>
                 <br>
+                
                 <p>มันคือแมวพันธุ์ : {{ pred_result['predictions'][0]['label'] }}</p>
                 <p>ความน่าจะเป็น : {{ pred_result['predictions'][0]['confidence'] }}</p>
+                <h1>ข้อมูลแมว</h1>
+                <p>ชื่อแมว : {{cats[0].Name}}</p>
+                <p>อายุขัยแมวที่น้อยที่สุด : {{cats[0].LifeSpanMin}}</p>
+                <p>อายุขัยแมวที่มากที่สุด : {{cats[0].LifeSpanMax}}</p>
+                <p>สีแมว :{{cats[0].Color}}</p>
+                <p>ความยาวของขน : {{cats[0].Coat}}</p>
+                <p>ความขี้เล่นของแมว : {{cats[0].Energy}}</p>
+                <p>จำนวนขนที่ร่วง : {{cats[0].Shedding}}</p>
+                <p>ขนาดตัวแมว : {{cats[0].Size}}</p>
                 <a href="/" class="btn btn-dark btn-sm">Home</a>
                 <a href="/catscan" class="btn btn-dark btn-sm">predict อีกครั้ง</a>
             </div>

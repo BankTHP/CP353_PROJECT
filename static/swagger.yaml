@@ -1,8 +1,8 @@
-openapi: "3.0.0"
+openapi: '3.0.2'
 info:
+  title: Cat
   description: API Reference
-  version: 1.0.0
-  title: Python Flask RESTful API | Food API quiz ID 62102010027
+  version: '1.0'
 servers:
   - url: http://localhost:5000
 paths:
@@ -44,31 +44,68 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/OAuthError"
-  /foods:
+        '500':
+          description: INTERNAL SERVER ERROR
+          content:
+            application/json:
+              schema:
+                example: "INTERNAL SERVER ERROR"
+
+  /cat:
     get:
       tags:
-        - Food API
-      summary: Food API
+        - Cat API
+      summary: Cat API
       parameters:
       - name: name
         in: query
-        description: Food name
+        description: cat name
         schema:
           type: string
-      - name: calories
+      - name: liifspanmin
         in: query
-        description: calories of food
+        description: cat liifspanmin 
         schema:
           type: number
+      - name: liifspanmax
+        in: query 
+        description: cat liifspanmax 
+        schema:
+          type: number  
+      - name: color
+        in: query
+        description: cat color 
+        schema:
+          type: string
+      - name: coat
+        in: query
+        description: cat coat
+        schema:
+          type: string
+      - name: energy
+        in: query
+        description: cat energy
+        schema:
+          type: string
+      - name: shedding
+        in: query
+        description: cat shedding
+        schema:
+          type: string
+      - name: size
+        in: query
+        description: cat size
+        schema:
+          type: string
       responses:
         '200':
           description: Successful operation search name
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/foodSchemas"
+                $ref: "#/components/schemas/catSchemas"
         '204':
-          description: Food name not found
+          description: not found
           content:
             application/json:
               schema:
@@ -76,11 +113,11 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: not found
+                    example: {}
     post:
       tags:
-        - Food API
-      summary: Food API create food
+        - Cat API
+      summary: Cat API create cat
       security:
         - bearerAuth: []
       requestBody:
@@ -88,96 +125,36 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/foodSchemas"
+              $ref: "#/components/schemas/catSchemas"
       responses:
         '200':
-          description: Successful create food
+          description: Cat has been added.
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/foodSchemas"
-        '401':
-          description: Unauthorize
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  msg:
-                    type: string
-                    example: Token has expired
-    put:
-      tags:
-        - Food API
-      summary: Food API Edit food
-      security:
-        - bearerAuth: []
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/editFoodSchema"
-      responses:
-        '200':
-          description: Successful create food
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/foodSchemas"
-        '401':
-          description: Unauthorize
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  msg:
-                    type: string
-                    example: Token has expired
-        '204':
-          description: Food name not found
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    example: not found
-  /foods/delete/{name}:
+                $ref: "#/components/schemas/catSchemas"
     delete:
       tags:
-        - Food API
-      summary: Food API Delete food
+        - Cat API
+      summary: Cat API Delete cat
       security:
         - bearerAuth: []
       parameters:
         - name: name
           in: path
-          description: Food name
+          description: Cat name
           schema:
             type: string
           required: true
       responses:
         '200':
-          description: Successful create food
+          description: Cat has been deleted.
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/foodSchemas"
-        '401':
-          description: Unauthorize
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  msg:
-                    type: string
-                    example: Token has expired
-        '204':
-          description: Food name not found
+                $ref: "#/components/schemas/catSchemas"
+        '500':
+          description: Cat name not found
           content:
             application/json:
               schema:
@@ -185,41 +162,38 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: not found
-  /bmr:
-    get:
+                    example: Bomby Cat1 not found.
+        
+  /cat/{name}:
+    put:
       tags:
-        - BMR
-      summary: BMR
-      parameters:
-      - name: weight
-        in: query
-        description: weight
-        schema:
-          type: number
-      - name: height
-        in: query
-        description: height
-        schema:
-          type: number
-      - name: age
-        in: query
-        description: age
-        schema:
-          type: integer
-      - name: gender
-        in: query
-        description: gender
-        schema:
-          type: string
-          enum: [m,g]
+        - Cat API
+      summary: Cat API Edit cat
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/catSchemas"
       responses:
         '200':
-          description: Successful operation
+          description: Bomby CatHAS BEEN UPDATED.
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/bmrSchemas"
+                $ref: "#/components/schemas/catSchemas"
+        '500':
+          description: Cat name not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: FAIL TO UPDATED.
 
 components:
   securitySchemes:
@@ -247,102 +221,22 @@ components:
           type: string
         error_description:
           type: string
-    foodSchemas:
+    catSchemas:
       type: object
-      properties:
-        Name:
-          type: string
-        Kilocalories:
-          type: number
-        Alpha_Carotene:
-          type: number
-        Beta_Carotene:
-          type: number
-        Carbohydrate:
-          type: number
-        Cholesterol:
-          type: number
-        Choline:
-          type: number
-        Fiber:
-          type: number
-        Lycopene:
-          type: number
-        Manganese:
-          type: number
-        Protein:
-          type: number
-        Selenium:
-          type: number
-        Sugar_Total:
-          type: number
-        Zinc:
-          type: number
-        Vitamin_B12:
-          type: number
-        Vitamin_B6:
-          type: number
-        Vitamin_C:
-          type: number
-        Vitamin_E:
-          type: number
-        Vitamin_K:
-          type: number
-    editFoodSchema:
-      type: object
-      properties:
-        key:
-          type: string
-        Name:
-          type: string
-        Kilocalories:
-          type: number
-        Alpha_Carotene:
-          type: number
-        Beta_Carotene:
-          type: number
-        Carbohydrate:
-          type: number
-        Cholesterol:
-          type: number
-        Choline:
-          type: number
-        Fiber:
-          type: number
-        Lycopene:
-          type: number
-        Manganese:
-          type: number
-        Protein:
-          type: number
-        Selenium:
-          type: number
-        Sugar_Total:
-          type: number
-        Zinc:
-          type: number
-        Vitamin_B12:
-          type: number
-        Vitamin_B6:
-          type: number
-        Vitamin_C:
-          type: number
-        Vitamin_E:
-          type: number
-        Vitamin_K:
-          type: number
-    caloriesSchemas:
-      type: object
-      required:
-        - calories
       properties:
         name:
           type: string
-        Kilocalories:
+        liifspanmin:
           type: number
-    bmrSchemas:
-      type: object
-      properties:
-        bmr:
+        lifespanmax:
           type: number
-        
+        color:
+          type: string
+        coat:
+          type: string
+        energy:
+          type: string
+        shedding:
+          type: string
+        size:
+          type: string

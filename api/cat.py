@@ -192,7 +192,7 @@ class CatApi(Resource):
         status = updatejson(catname, info)
         if status == 200:
             return {
-                "message": catname+"HAS BEEN UPDATED."}, 200
+                "message": catname+" HAS BEEN UPDATED."}, 200
         elif status == 500:
             return {"message": "FAIL TO UPDATED."}, 500
 
