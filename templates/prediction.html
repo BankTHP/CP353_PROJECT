@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+{% block body %}
+
+<div class="col-md-12">
+    <div class="touch">
+        <div class="card text-left">
+            <div class="card-body">
+                <h1>Prediction</h1>
+                <p>มันคือแมวพันธุ์ : {{ pred_result['predictions'][0]['label'] }}</p>
+                <p>ความน่าจะเป็น : {{ pred_result['predictions'][0]['confidence'] }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

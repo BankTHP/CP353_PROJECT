@@ -52,7 +52,7 @@
     {
         "Name": "Birman Cat Breed",
         "LifeSpanMin": 15,
-        "LifeSpanMax": "15+",
+        "LifeSpanMax": 15,
         "Color": "Seal point, blue point, chocolate point, lilac point",
         "Coat": "High",
         "Energy": "Low",
