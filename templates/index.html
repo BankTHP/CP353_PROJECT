@@ -5,7 +5,7 @@
     <div class="card text-left">
       <div class="card-body">
         <h5 class="text-center"> CAT </h5>
-
+        
         <div class="form-check">
           <span>Energy : </span>
           <label><input class="cardCheckBox" type="checkbox" value="Low"> Low</label>
@@ -28,13 +28,14 @@
           <label><input class="cardCheckCoat" type="checkbox" value="Medium"> Medium</label>
           <label><input class="cardCheckCoat" type="checkbox" value="High"> High</label>
         </div>
-
+        <br>
+        <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for cat name...">
         <div class="touch">
-          <div class="card text-left">
+          <div class="card text-left" id="myProducts">
             <div class="card-body">
               <div class="cards-list mt-2">
                 {% for i in data %}
-                <div class="card" data-coat="{{i.Coat}}" data-shedding="{{i.Shedding}}" data-size="{{i.Size}}" data-energy="{{i.Energy}}">
+                <div  class="card" data-coat="{{i.Coat}}" data-shedding="{{i.Shedding}}" data-size="{{i.Size}}" data-energy="{{i.Energy}}">
                   <div class="card-body">
                     <h2 class="card-title">{{i.Name}}</h2>
                     <p class="card-text">พลังงานของแมว : {{i.Energy}}</p>
@@ -107,6 +108,23 @@
     });
 
   });
+
+  function myFunction() {
+  var input, filter, cards, cardContainer, title, i;
+  input = document.getElementById("myFilter");
+  filter = input.value.toUpperCase();
+  cardContainer = document.getElementById("myProducts");
+  cards = cardContainer.getElementsByClassName("card");
+  for (i = 0; i < cards.length; i++) {
+    title = cards[i].querySelector(".card-title");
+    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+
 </script>
 
 {% endblock %}
