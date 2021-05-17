@@ -70,10 +70,10 @@ def upload_file():
         cats = []
         name = outputs['predictions'][0]['label']
         for i in data:
-            if  name in i['Name']:
+            if  name == i['Name']:
                 cats.append(i)
             
-        imagename = imagecat.filename
+        imagename = imagecat.filename()
         return render_template('prediction.html', pred_result=outputs,pic = imagename,cats = cats)
 
     return render_template('upload.html')
