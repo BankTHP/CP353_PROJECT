@@ -11,7 +11,7 @@
                 <br>
                 
                 <p>มันคือแมวพันธุ์ : {{ pred_result['predictions'][0]['label'] }}</p>
-                <p>ความน่าจะเป็น : {{ pred_result['predictions'][0]['confidence'] }}</p>
+                <p>ความน่าจะเป็น : {{ pred_result['predictions'][0]['confidence']*100 }} %</p>
                 <h1>ข้อมูลแมว</h1>
                 <br>
                 <p>ชื่อแมว : {{cats[0].Name}}</p>

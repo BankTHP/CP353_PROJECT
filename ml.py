@@ -106,3 +106,4 @@ class TFModel:
     def __del__(self) -> None:
         self.cleanup()
 
+print()
