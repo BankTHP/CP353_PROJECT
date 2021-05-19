@@ -4,7 +4,10 @@
   * นาย ธนพัฒน์ เอี่ยมประเสริฐ
   * นาย ศรายุธ ธนาคำ
 
-## Installation clone CP353_project to your pc
+## Installation 
+```
+clone CP353_project to your pc
+```
 
 ##How to run rest-api and swagger
 ```
