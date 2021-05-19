@@ -5,7 +5,7 @@ from flask_jwt_extended.jwt_manager import JWTManager
 from flask_restful import Api
 from PIL import Image
 import base64
-
+from ml import TFModel
 import os,json,requests
 from flask_sqlalchemy import SQLAlchemy
 from api.routes import create_route
@@ -20,14 +20,7 @@ config = {
 
 #init app
 app = Flask(__name__)
-from flask import Flask,render_template,request
-from werkzeug import datastructures
-from flask_cors import CORS
-from flask_jwt_extended.jwt_manager import JWTManager
-from flask_restful import Api
-from PIL import Image
-import base64
-from ml import TFModel
+
 
 config = {
     'JSON_SORT_KEYS': False,
