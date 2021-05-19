@@ -24,7 +24,7 @@ api = Api(app)
 
 @app.route("/")
 def home():
-    data = readJson()
+    data = readJson() 
     return render_template("index.html",data = data)
 
 
