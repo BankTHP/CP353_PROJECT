@@ -6,10 +6,6 @@
         <div class="card text-left">
             <div class="card-body">
                 <h1>Prediction</h1>
-                <img src="{{pic}}" align="middle"width="1000" height="800" />
-                <br>
-                <br>
-                
                 <p>มันคือแมวพันธุ์ : {{ pred_result['predictions'][0]['label'] }}</p>
                 <p>ความน่าจะเป็น : {{ pred_result['predictions'][0]['confidence']*100 }} %</p>
                 <h1>ข้อมูลแมว</h1>
