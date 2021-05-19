@@ -8,17 +8,8 @@ import base64
 from ml import TFModel
 import os,json,requests
 from flask_sqlalchemy import SQLAlchemy
-from api.routes import create_route
 from flask_swagger_ui import get_swaggerui_blueprint
 
-config = {
-    'JSON_SORT_KEYS': False,
-    'JWT_SECRET_KEY': 'BaNPFol%Dgfgge',
-    'JWT_ACCESS_TOKEN_EXPIRES': 300,
-    'JWT_REFRESH_TOKEN_EXPIRES': 604800
-}
-
-#init app
 app = Flask(__name__)
 
 UPLOAD_FOLDER = './static/uploads'
@@ -26,31 +17,9 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 model = TFModel(model_dir='./ml-model/')
 model.load()
-CORS(app, origins="*", allow_headers=[
-    "Content-Type", "Authorization", "Access-Control-Allow-Credentials"
-], supports_credentials=True)
 
-
-app.config.update(config)
 
 api = Api(app)
-create_route(api=api)
-
-# swagger specific
-SWAGGER_URL = '/swagger'
-API_URL = '/static/swagger.yaml'
-SWAGGER_UI_BLUEPRINT = get_swaggerui_blueprint(
-    SWAGGER_URL,
-    API_URL,
-    config={
-        'app_name': "Python Flask RESTful API"
-    }
-)
-app.register_blueprint(SWAGGER_UI_BLUEPRINT, url_prefix=SWAGGER_URL)
-
-# init JWT
-jwt = JWTManager(app=app)
-
 
 
 @app.route("/")

@@ -1,0 +1,242 @@
+openapi: '3.0.2'
+info:
+  title: Cat
+  description: API Reference
+  version: '1.0'
+servers:
+  - url: http://localhost:5000
+paths:
+  /authentication/token:
+    post:
+      tags:
+        - Authentication
+      summary: Authentication
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+              required:
+                - username
+                - password
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Token"
+        '400':
+          description: Invalid parameters
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OAuthError"
+        '204':
+          description: Username or Password not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OAuthError"
+        '500':
+          description: INTERNAL SERVER ERROR
+          content:
+            application/json:
+              schema:
+                example: "INTERNAL SERVER ERROR"
+
+  /cat:
+    get:
+      tags:
+        - Cat API
+      summary: Cat API
+      parameters:
+      - name: name
+        in: query
+        description: cat name
+        schema:
+          type: string
+      - name: liifspanmin
+        in: query
+        description: cat liifspanmin 
+        schema:
+          type: number
+      - name: liifspanmax
+        in: query 
+        description: cat liifspanmax 
+        schema:
+          type: number  
+      - name: color
+        in: query
+        description: cat color 
+        schema:
+          type: string
+      - name: coat
+        in: query
+        description: cat coat
+        schema:
+          type: string
+      - name: energy
+        in: query
+        description: cat energy
+        schema:
+          type: string
+      - name: shedding
+        in: query
+        description: cat shedding
+        schema:
+          type: string
+      - name: size
+        in: query
+        description: cat size
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Successful operation search name
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/catSchemas"
+        '204':
+          description: not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: {}
+    post:
+      tags:
+        - Cat API
+      summary: Cat API create cat
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/catSchemas"
+      responses:
+        '200':
+          description: Cat has been added.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/catSchemas"
+    delete:
+      tags:
+        - Cat API
+      summary: Cat API Delete cat
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: name
+          in: path
+          description: Cat name
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Cat has been deleted.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/catSchemas"
+        '500':
+          description: Cat name not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Bomby Cat1 not found.
+        
+  /cat/{name}:
+    put:
+      tags:
+        - Cat API
+      summary: Cat API Edit cat
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/catSchemas"
+      responses:
+        '200':
+          description: Bomby CatHAS BEEN UPDATED.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/catSchemas"
+        '500':
+          description: Cat name not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: FAIL TO UPDATED.
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Token:
+      type: object
+      properties:
+        access_token:
+          type: string
+        token_type:
+          type: string
+        expires_in:
+          type: integer
+          format: int64
+        refresh_token:
+          type: string
+    OAuthError:
+      type: object
+      properties:
+        error:
+          type: string
+        error_description:
+          type: string
+    catSchemas:
+      type: object
+      properties:
+        name:
+          type: string
+        liifspanmin:
+          type: number
+        lifespanmax:
+          type: number
+        color:
+          type: string
+        coat:
+          type: string
+        energy:
+          type: string
+        shedding:
+          type: string
+        size:
+          type: string

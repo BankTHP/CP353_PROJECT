@@ -1,0 +1,472 @@
+[
+    {
+        "Name": "Abyssinian Cat",
+        "LifeSpanMin": 9,
+        "LifeSpanMax": 15,
+        "Color": "Ruddy,Red,Blue,Fawn",
+        "Coat": "Medium",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "American Bobtail Cat Breed",
+        "LifeSpanMin": 13,
+        "LifeSpanMax": 15,
+        "Color": "White,Black,Blue,Red,Cream,Chocolate,Lavender,Cinnamon,Fawn",
+        "Coat": "Short,Medium,Long",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Small"
+    },
+    {
+        "Name": "American Curl Cat Breed",
+        "Coat": "Short, Semi-long",
+        "Color": "White, black, blue, red, cream, chocolate, lilac, silver, golden",
+        "LifeSpanMin": 13,
+        "LifeSpanMax": 13,
+        "Energy": "High",
+        "Shedding": "Low",
+        "Size": "Small to Medium"
+    },
+    {
+        "Name": "American Shorthair Cat",
+        "Coat": "Short",
+        "Color": "White, black, blue, red, cream and silver",
+        "LifeSpanMin": 15,
+        "LifeSpanMax": 20,
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "American Wirehair Cat Breed",
+        "Coat": "Medium",
+        "Color": "all colors and patterns",
+        "LifeSpanMin": 7,
+        "LifeSpanMax": 12,
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Balinese-Javanese Cat Breed",
+        "Coat": "Medium",
+        "Color": "colors are always colorpoint, and include red, seal, chocolate, cream, blue, lilac and tortie points",
+        "LifeSpanMin": 7,
+        "LifeSpanMax": 12,
+        "Energy": "High",
+        "Shedding": "Moderate",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Bombay Cat",
+        "Coat": "Short",
+        "Color": "Black",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 16,
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "British Shorthair Cat Breed",
+        "Coat": "Short, plush, dense",
+        "Color": "Blue, white, black, red, cream, smoke, silver and golden",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 16,
+        "Energy": "Low",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Burmese Cat",
+        "Coat": "Short",
+        "Color": "Sable, champagne, blue, platinum",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 16,
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Turkish Angora Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 18,
+        "Color": "White,Black,Blue,Cream",
+        "Coat": "Semi-long",
+        "Energy": "High",
+        "Shedding": "Heavy",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Chartreux Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 18,
+        "Color": "Ash",
+        "Coat": "Medium",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Bengal Cat",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 16,
+        "Color": "Bright orange",
+        "Coat": "Medium",
+        "Energy": "Low",
+        "Shedding": "Low",
+        "Size": "Large"
+    },
+    {
+        "Name": "Birman Cat Breed",
+        "LifeSpanMin": 15,
+        "LifeSpanMax": 15,
+        "Color": "Seal point, blue point, chocolate point, lilac point",
+        "Coat": "High",
+        "Energy": "High",
+        "Shedding": "Heavy",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Cornish Rex Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "White, black, blue, red, cream, chocolate, lavender, silver, smoke and tabby",
+        "Coat": "Short,extremely soft and silky",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Small to medium"
+    },
+    {
+        "Name": "Devon Rex Cat Breed",
+        "LifeSpanMin": 9,
+        "LifeSpanMax": 15,
+        "Color": "White, black, blue, red, cream, chocolate, lavender, cinnamon and fawn",
+        "Coat": "Short",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Small to Medium"
+    },
+    {
+        "Name": "Egyptian Mau Cat",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 15,
+        "Color": "Silver, bronze and smoke",
+        "Coat": "Short to medium",
+        "Energy": "High",
+        "Shedding": "Moderate",
+        "Size": "Medium"
+    },
+    {
+        "Name": "European Burmese Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 16,
+        "Color": "Brown, blue, chocolate, lilac, red, cream, brown tortie, blue tortie, chocolate tortie, lilac tortie",
+        "Coat": "Short, fine, glossy",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Exotic Shorthair Cat Breed",
+        "LifeSpanMin": 15,
+        "LifeSpanMax": 17,
+        "Color": "White, black, blue, red, cream, chocolate, lilac, silver",
+        "Coat": "Short",
+        "Energy": "Low",
+        "Shedding": "Minimal",
+        "Size": "Medium to Large"
+    },
+    {
+        "Name": "Havana Brown Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 15,
+        "Color": "Brown",
+        "Coat": "Short to medium",
+        "Energy": "Low",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Himalayan Cat Breed",
+        "LifeSpanMin": 9,
+        "LifeSpanMax": 15,
+        "Color": "White to fawn body with color points that include chocolate, seal, lilac, blue, red, cream tortie, blue-cream, chocolate-tortie, lilac-cream, seal lynx, blue lynx, red lynx, cream lynx, tortie lynx, blue-cream lynx, chocolate lynx, lilac lynx, chocolate-tortie lynx and lilac-cream lynx",
+        "Coat": "Long",
+        "Energy": "Low",
+        "Shedding": "Heavy",
+        "Size": "Medium to Large"
+    },
+    {
+        "Name": "Japanese Bobtail Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "White, black, red, blue and cream, plus various patterns and shadings",
+        "Coat": "Long",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Korat Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "White, black, red, grey and cream",
+        "Coat": "Short, glossy, fine",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "LaPerm Cat",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "White, black, blue, red, cream, chocolate, cinnamon, fawn and lavender",
+        "Coat": "Short or long, soft, wavy",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Maine Coon Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "Most commonly brown tabby",
+        "Coat": "Shorter on the shoulders and longer on the stomach, smooth, shaggy",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Large"
+    },
+    {
+        "Name": "Manx Cat",
+        "LifeSpanMin": 8,
+        "LifeSpanMax": 14,
+        "Color": "White, black, blue, red, cream and silver",
+        "Coat": "Longhair  medium, dense, soft, silky; shorthair  short, dense, glossy",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Medium to Large"
+    },
+    {
+        "Name": "Munchkin Cat",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 15,
+        "Color": "Colors and patterns vary",
+        "Coat": "Long or Short",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Small"
+    },
+    {
+        "Name": "Norwegian Forest Cat Breed",
+        "LifeSpanMin": 14,
+        "LifeSpanMax": 16,
+        "Color": "White, black, blue, red, cream and silver",
+        "Coat": "Long, dense, glossy, smooth",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Large"
+    },
+    {
+        "Name": "Ocicat Cat Breed",
+        "LifeSpanMin": 15,
+        "LifeSpanMax": 18,
+        "Color": "Tawny, chocolate, cinnamon, blue, lavender, fawn, ebony silver, chocolate silver, cinnamon silver, blue silver, lavender silver, fawn silver",
+        "Coat": "Short, smooth, satiny",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Oriental Cat Breed",
+        "LifeSpanMin": 8,
+        "LifeSpanMax": 15,
+        "Color": "Blue, chestnut, cinnamon, cream, ebony, fawn, lavender, red and white",
+        "Coat": "Shorthair, Longhair",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Small to Medium"
+    },
+    {
+        "Name": "Persian Cat Breed",
+        "LifeSpanMin": 15,
+        "LifeSpanMax": 20,
+        "Color": "White, blue, black, red, cream, chocolate, lilac",
+        "Coat": "Long, thick, glossy",
+        "Energy": "Low",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Peterbald Breed",
+        "LifeSpanMin": 13,
+        "LifeSpanMax": 15,
+        "Color": "All colors and/or markings are acceptable",
+        "Coat": "Hairless",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Pixiebob Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "Brown-spotted tabby",
+        "Coat": "Longhair  medium, soft, silky; shorthair  short, soft, resilient",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Ragamuffin Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "White, black, blue, red, cream, chocolate, lilac, cinnamon and fawn",
+        "Coat": "Medium-long, thick, plush",
+        "Energy": "Low",
+        "Shedding": "Minimal",
+        "Size": "Large"
+    },
+    {
+        "Name": "Ragdoll Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 17,
+        "Color": "Seal, blue, chocolate, lilac, red and cream",
+        "Coat": "Semi-long, plush, silky",
+        "Energy": "Low",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Russian Blue Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 15,
+        "Color": "Blue with silver tips",
+        "Coat": "Short, dense, fine, plush",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Russian Blue Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 20,
+        "Color": "Black, brown spotted tabby, black silver spotted tabby, black smoke",
+        "Coat": "Short, slightly coarse",
+        "Energy": "Hihg",
+        "Shedding": "Minimal",
+        "Size": "Large"
+    },
+    {
+        "Name": "Scottish Fold Cat Breed",
+        "LifeSpanMin": 11,
+        "LifeSpanMax": 15,
+        "Color": "White, black, blue, red, cream and silver",
+        "Coat": "Longhair  medium-long; shorthair  medium-short, dense, plush",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Selkirk Rex Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "White, black, red, cream, chocolate and lavender",
+        "Coat": "Longhair  long, dense, soft, curly; shorthair  short, dense, soft, curly",
+        "Energy": "Low",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Siamese Cat Breed",
+        "LifeSpanMin": 11,
+        "LifeSpanMax": 15,
+        "Color": "Seal point, chocolate point, blue point, lilac point",
+        "Coat": "Short, fine, glossy",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Siberian Cat Breed",
+        "LifeSpanMin": 11,
+        "LifeSpanMax": 15,
+        "Color": "White, black, blue, red, cream and silver",
+        "Coat": "Semi-long",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Singapura Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 13,
+        "Color": "Sepia",
+        "Coat": "Short, fine, silky",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Small"
+    },
+    {
+        "Name": "Somali Cat Breed",
+        "LifeSpanMin": 11,
+        "LifeSpanMax": 14,
+        "Color": "Ruddy, red, blue, fawn",
+        "Coat": "Medium, fine, soft",
+        "Energy": "Medium",
+        "Shedding": "Minimal",
+        "Size": "Medium to large"
+    },
+    {
+        "Name": "Sphynx Cat Breed",
+        "LifeSpanMin": 8,
+        "LifeSpanMax": 15,
+        "Color": "White, black, blue, red, cream, chocolate, lavender, cinnamon and fawn",
+        "Coat": "Hairless, although some have a fine down",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Tonkinese Cat Breed",
+        "LifeSpanMin": 9,
+        "LifeSpanMax": 14,
+        "Color": "Natural mink, champagne mink, blue mink, platinum mink, natural solid, champagne solid, blue solid, platinum solid, natural point, champagne point, blue point, platinum point",
+        "Coat": "Medium-short, fine, silky",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Toyger Cat Breed",
+        "LifeSpanMin": 10,
+        "LifeSpanMax": 14,
+        "Color": "Brown mackerel tabby",
+        "Coat": "Short, plush, soft",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Turkish Angora Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 18,
+        "Color": "White, black, blue, cream and red",
+        "Coat": "Semi-long",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium"
+    },
+    {
+        "Name": "Turkish Van Cat Breed",
+        "LifeSpanMin": 12,
+        "LifeSpanMax": 18,
+        "Color": "Red, cream, black, blue, red tabby, cream tabby, brown tabby, blue tabby, tortoiseshell, dilute tortoiseshell, brown patched tabby and blue patched tabby",
+        "Coat": "Semi-long, fine, cashmere-like",
+        "Energy": "High",
+        "Shedding": "Minimal",
+        "Size": "Medium to Large"
+    }
+]
